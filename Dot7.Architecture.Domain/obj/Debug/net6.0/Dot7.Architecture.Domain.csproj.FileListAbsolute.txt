@@ -1,0 +1,12 @@
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\bin\Debug\net6.0\Dot7.Architecture.Domain.deps.json
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\bin\Debug\net6.0\Dot7.Architecture.Domain.dll
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\bin\Debug\net6.0\Dot7.Architecture.Domain.pdb
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.csproj.AssemblyReference.cache
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.AssemblyInfoInputs.cache
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.AssemblyInfo.cs
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.csproj.CoreCompileInputs.cache
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.dll
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\refint\Dot7.Architecture.Domain.dll
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\Dot7.Architecture.Domain.pdb
+C:\backup\Clean\sample2\Dot7.Architecture.Domain\obj\Debug\net6.0\ref\Dot7.Architecture.Domain.dll

@@ -1,0 +1,304 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\backup\\Clean\\sample2\\Dot7.Architecture\\Dot7.Architecture.Api.csproj": {}
+  },
+  "projects": {
+    "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj",
+        "projectName": "Dot7.Architecture.Application",
+        "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj",
+        "packagesPath": "C:\\Users\\samithas\\.nuget\\packages\\",
+        "outputPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samithas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj": {
+                "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj",
+        "projectName": "Dot7.Architecture.Domain",
+        "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj",
+        "packagesPath": "C:\\Users\\samithas\\.nuget\\packages\\",
+        "outputPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samithas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Infrastructure\\Dot7.Architecture.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Infrastructure\\Dot7.Architecture.Infrastructure.csproj",
+        "projectName": "Dot7.Architecture.Infrastructure",
+        "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Infrastructure\\Dot7.Architecture.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\samithas\\.nuget\\packages\\",
+        "outputPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samithas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj": {
+                "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj"
+              },
+              "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj": {
+                "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Domain\\Dot7.Architecture.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\backup\\Clean\\sample2\\Dot7.Architecture\\Dot7.Architecture.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\backup\\Clean\\sample2\\Dot7.Architecture\\Dot7.Architecture.Api.csproj",
+        "projectName": "Dot7.Architecture.Api",
+        "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture\\Dot7.Architecture.Api.csproj",
+        "packagesPath": "C:\\Users\\samithas\\.nuget\\packages\\",
+        "outputPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\samithas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj": {
+                "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Application\\Dot7.Architecture.Application.csproj"
+              },
+              "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Infrastructure\\Dot7.Architecture.Infrastructure.csproj": {
+                "projectPath": "C:\\backup\\Clean\\sample2\\Dot7.Architecture.Infrastructure\\Dot7.Architecture.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
