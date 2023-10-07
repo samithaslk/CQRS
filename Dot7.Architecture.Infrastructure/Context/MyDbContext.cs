@@ -22,14 +22,7 @@ namespace Dot7.Architecture.Infrastructure.Context
             return await SaveChangesAsync();
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            //modelBuilder.Entity<Book>(b =>
-            //{
-            //    b.HasKey(e => e.Id);
-            //    b.Property(e => e.Id).ValueGeneratedOnAdd();
-            //});
-
-          
+        {          
             modelBuilder.Entity<Book>(b =>
             {
                 b.HasKey(e => e.Id);
@@ -40,10 +33,6 @@ namespace Dot7.Architecture.Infrastructure.Context
                 );
             });
 
-           //modelBuilder.Entity<Book>().HasData(
-           //     new Book { Id=1,Author = "Maria Hoey and Peter Hoey", Isbn = "978-1-60309-502-0", Title = "Animal Stories" },
-           //     new Book { Id = 2, Author = "Emilia McKenzie", Isbn = "978-1-60309-527-3", Title = "But You Have Friends" }
-           //     );
         }
     }
 }
