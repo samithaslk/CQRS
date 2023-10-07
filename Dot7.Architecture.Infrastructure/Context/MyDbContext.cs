@@ -15,7 +15,7 @@ namespace Dot7.Architecture.Infrastructure.Context
         {
             
         }
-        public DbSet<Beach> Beach { get; set; }
+        public DbSet<Book> Book { get; set; }
         public async Task<int> SaveToDbAsync()
         {
             return await SaveChangesAsync();

@@ -88,3 +88,11 @@ C:\backup\Clean\sample2\Dot7.Architecture\obj\Debug\net6.0\refint\Dot7.Architect
 C:\backup\Clean\sample2\Dot7.Architecture\obj\Debug\net6.0\Dot7.Architecture.Api.pdb
 C:\backup\Clean\sample2\Dot7.Architecture\obj\Debug\net6.0\Dot7.Architecture.Api.genruntimeconfig.cache
 C:\backup\Clean\sample2\Dot7.Architecture\obj\Debug\net6.0\ref\Dot7.Architecture.Api.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\Humanizer.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\Mono.TextTemplating.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\System.CodeDom.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\System.Text.Encodings.Web.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\System.Text.Json.dll
+C:\backup\Clean\sample2\Dot7.Architecture\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll

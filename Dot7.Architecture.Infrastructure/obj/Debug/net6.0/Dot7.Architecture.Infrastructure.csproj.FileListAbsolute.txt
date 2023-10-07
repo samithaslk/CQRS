@@ -1,8 +1,3 @@
-C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.csproj.AssemblyReference.cache
-C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.AssemblyInfoInputs.cache
-C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.AssemblyInfo.cs
-C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.csproj.CoreCompileInputs.cache
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Infrastructure.deps.json
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Infrastructure.dll
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Infrastructure.pdb
@@ -10,8 +5,15 @@ C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.A
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Domain.dll
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Application.pdb
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Domain.pdb
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.csproj.AssemblyReference.cache
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.AssemblyInfoInputs.cache
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.AssemblyInfo.cs
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.csproj.CoreCompileInputs.cache
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.csproj.CopyComplete
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.dll
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\refint\Dot7.Architecture.Infrastructure.dll
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.pdb
 C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\ref\Dot7.Architecture.Infrastructure.dll
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\bin\Debug\net6.0\Dot7.Architecture.Infrastructure.runtimeconfig.json
+C:\backup\Clean\sample2\Dot7.Architecture.Infrastructure\obj\Debug\net6.0\Dot7.Architecture.Infrastructure.genruntimeconfig.cache
