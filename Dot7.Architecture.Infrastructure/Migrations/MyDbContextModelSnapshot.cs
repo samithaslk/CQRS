@@ -27,7 +27,7 @@ namespace Dot7.Architecture.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 10000000L);
 
                     b.Property<string>("Author")
                         .IsRequired()
@@ -44,6 +44,22 @@ namespace Dot7.Architecture.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Book");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 4,
+                            Author = "Maria Hoey and Peter Hoey",
+                            Isbn = "978-1-60309-502-0",
+                            Title = "Animal Stories"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Author = "Emilia McKenzie",
+                            Isbn = "978-1-60309-527-3",
+                            Title = "But You Have Friends"
+                        });
                 });
 #pragma warning restore 612, 618
         }
