@@ -14,17 +14,17 @@ namespace Dot7.Architecture.Application.Books.GetAllBeaches
 {
     public class GetAllBooksQueryHandler : IRequestHandler<GetAllBooksRequest, List<GetAllBooksResponse>>
     {
-        private readonly IMyDbContext _myWorldDbContext;
+        private readonly IMyDbContext _myDbContext;
         private readonly IMapper _mapper;
-        public GetAllBooksQueryHandler(IMyDbContext myWorldDbContext,
+        public GetAllBooksQueryHandler(IMyDbContext myDbContext,
         IMapper mapper)
         {
-            _myWorldDbContext = myWorldDbContext;
+            _myDbContext = myDbContext;
             _mapper = mapper;
         }
         public Task<List<GetAllBooksResponse>> Handle(GetAllBooksRequest request, CancellationToken cancellationToken)
         {
-            return _myWorldDbContext.Book.ProjectTo<GetAllBooksResponse>(_mapper.ConfigurationProvider)
+            return _myDbContext.Book.ProjectTo<GetAllBooksResponse>(_mapper.ConfigurationProvider)
             .ToListAsync();
         }
     }
