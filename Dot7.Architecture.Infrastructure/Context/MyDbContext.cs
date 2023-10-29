@@ -17,6 +17,7 @@ namespace Dot7.Architecture.Infrastructure.Context
             
         }
         public DbSet<Book> Book { get; set; }
+        public DbSet<User> LibraryUser { get; set; }
         public async Task<int> SaveToDbAsync()
         {
             return await SaveChangesAsync();
@@ -31,6 +32,9 @@ namespace Dot7.Architecture.Infrastructure.Context
                 new Book { Id=4, Author = "Maria Hoey and Peter Hoey", Isbn = "978-1-60309-502-0", Title = "Animal Stories" },
                 new Book { Id =5,Author = "Emilia McKenzie", Isbn = "978-1-60309-527-3", Title = "But You Have Friends" }
                 );
+            });
+            modelBuilder.Entity<User>(b => { 
+             b.HasKey(b => b.Id);  
             });
 
         }
