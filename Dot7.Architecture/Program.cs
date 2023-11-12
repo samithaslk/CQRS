@@ -1,15 +1,27 @@
+using Dot7.Architecture.Api.Extensions;
 using Dot7.Architecture.Application;
 using Dot7.Architecture.Application.Authenticate.Services;
+using Dot7.Architecture.Application.Log;
 using Dot7.Architecture.Infrastructure;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
+using Serilog;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
+
+//var logger = app.Services.GetRequiredService<ILoggerManager>();
+// serilog configuration
+builder.Host.UseSerilog((context, loggerConfig) => {
+    loggerConfig
+    .ReadFrom.Configuration(context.Configuration)
+    .WriteTo.Console()
+    //  .Enrich.WithExceptionDetails()
+    .Enrich.FromLogContext();
+    //.WriteTo.Seq("http://localhost:5341");
+});
+
 
 // Add services to the container.
 
@@ -43,10 +55,13 @@ builder.Services.AddSwaggerGen(setup =>
 
 });
 
+//LogManager.Setup().LoadConfigurationFromFile("/nlog.config");
+builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureInfraStructure(builder.Configuration);
 builder.Services.ConfigureApplication(builder.Configuration);
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<IConfigurationSettingsService, ConfigurationSettingsService>();
+
 
 var key = WebApplication.CreateBuilder().Configuration["Settings:AccessTokenKey"];
 builder.Services.AddAuthentication(x =>
@@ -69,12 +84,19 @@ builder.Services.AddAuthentication(x =>
 builder.Services.AddControllers();
 
 var app = builder.Build();
+
+var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.ConfigureExceptionHandler(logger);
 IConfiguration configuration = app.Configuration;
 IWebHostEnvironment environment = app.Environment;
+
+//app.ConfigureExceptionHandler(logger);
+ 
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
+    
     app.UseSwagger();
     app.UseSwaggerUI();
 }
