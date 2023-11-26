@@ -9,17 +9,13 @@ using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
 
-var builder = WebApplication.CreateBuilder(args);
-
-//var logger = app.Services.GetRequiredService<ILoggerManager>();
-// serilog configuration
+var builder = WebApplication.CreateBuilder(args); 
 builder.Host.UseSerilog((context, loggerConfig) => {
     loggerConfig
     .ReadFrom.Configuration(context.Configuration)
-    .WriteTo.Console()
-    //  .Enrich.WithExceptionDetails()
-    .Enrich.FromLogContext();
-    //.WriteTo.Seq("http://localhost:5341");
+    .Enrich.FromLogContext()
+     .WriteTo.Console()
+    .WriteTo.Seq("http://localhost:5341");
 });
 
 
@@ -86,11 +82,10 @@ builder.Services.AddControllers();
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerManager>();
+app.UseSerilogRequestLogging();
 app.ConfigureExceptionHandler(logger);
 IConfiguration configuration = app.Configuration;
-IWebHostEnvironment environment = app.Environment;
-
-//app.ConfigureExceptionHandler(logger);
+IWebHostEnvironment environment = app.Environment; 
  
 
 // Configure the HTTP request pipeline.
