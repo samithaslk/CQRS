@@ -1,5 +1,7 @@
 ﻿using Dot7.Architecture.Application.Context;
+using Dot7.Architecture.Application.Contracts;
 using Dot7.Architecture.Infrastructure.Context;
+using Dot7.Architecture.Infrastructure.Repositories;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -17,6 +19,8 @@ namespace Dot7.Architecture.Infrastructure
                 options.UseSqlServer(configuration.GetConnectionString("MyDbConnection"));
             });
             services.AddScoped<IMyDbContext>(option => { return option.GetService<MyDbContext>(); });
+
+            services.AddScoped<IBookRepositiry, BookRepository>();
         }
     }
 }

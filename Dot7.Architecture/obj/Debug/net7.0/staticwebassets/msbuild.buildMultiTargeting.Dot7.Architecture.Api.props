@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Dot7.Architecture.Api.props" />
+</Project>
