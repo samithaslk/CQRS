@@ -21,9 +21,9 @@ namespace Dot7.Architecture.Api.Controllers
             return Ok(response);
         }
         [HttpPost]
-        public async Task<IActionResult> PostAsync(CreateBookRequest payload)
+        public async Task<IActionResult> PostAsync([FromBody] CreateBookRequest request)
         {
-            var newlyCreateItemId = await _mediator.Send(payload);
+            var newlyCreateItemId = await _mediator.Send(request);
             return Ok(newlyCreateItemId);
         }
     }

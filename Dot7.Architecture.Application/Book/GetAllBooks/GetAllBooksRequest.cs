@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Dot7.Architecture.Application.Books.GetAllBooks
 {
-    public class GetAllBooksRequest : IRequest<List<GetAllBooksResponse>>
+    public class GetAllBooksRequest : IRequest<IEnumerable<GetAllBooksResponse>>
     {
     }
 }
