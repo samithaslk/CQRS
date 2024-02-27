@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
 using System.Text;
+using VueCliMiddleware;
 
 var builder = WebApplication.CreateBuilder(args); 
 builder.Host.UseSerilog((context, loggerConfig) => {
@@ -78,6 +79,9 @@ builder.Services.AddAuthentication(x =>
                 };
             });
 builder.Services.AddControllers();
+builder.Services.AddSpaStaticFiles(config => {
+    config.RootPath = "ClientApp";
+});
 
 var app = builder.Build();
 
@@ -97,11 +101,18 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseRouting();
+app.UseCors(builder => builder
+      .AllowAnyHeader()
+      .AllowAnyMethod()
+      .AllowAnyOrigin()
+   );
+app.UseSpaStaticFiles();
 app.UseAuthentication();
 app.UseAuthorization();
 
 
-app.MapControllers();
+app.MapControllers(); 
 
 app.Run();
