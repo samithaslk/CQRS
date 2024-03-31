@@ -12,6 +12,10 @@ namespace Dot7.Architecture.Infrastructure.Context
 {
     public class MyDbContext : DbContext, IMyDbContext
     {
+        public MyDbContext()
+        {
+            
+        }
         public MyDbContext(DbContextOptions<MyDbContext> options) : base(options)
         {
             
@@ -21,6 +25,11 @@ namespace Dot7.Architecture.Infrastructure.Context
         public async Task<int> SaveToDbAsync()
         {
             return await SaveChangesAsync();
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder
+ optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=localhost\\SQLEXPRESS;Initial Catalog = Library;Integrated Security=True;Trusted_Connection=True;TrustServerCertificate=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {          
