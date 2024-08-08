@@ -10,7 +10,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <div class="navbar-nav mr-auto">
                     <router-link class="nav-item nav-link" to="/">Home</router-link>
-                    <router-link class="nav-item nav-link" to="fetchBooks" id="view" :key='$route.params.id || $route.params'>Books</router-link>
+                    <!--router-link class="nav-item nav-link" to="fetchBooks" id="view" :key='$route.params.id || $route.params'>Books</router-link-->
+                    <router-link class="nav-item nav-link" to="BookRecords" id="view" :key='$route.params.id || $route.params'>Books</router-link>
                 </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">

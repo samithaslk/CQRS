@@ -3,7 +3,9 @@ using Dot7.Architecture.Application;
 using Dot7.Architecture.Application.Authenticate.Services;
 using Dot7.Architecture.Application.Log;
 using Dot7.Architecture.Infrastructure;
+using Dot7.Architecture.Infrastructure.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Serilog;
@@ -58,7 +60,9 @@ builder.Services.ConfigureInfraStructure(builder.Configuration);
 builder.Services.ConfigureApplication(builder.Configuration);
 builder.Services.AddTransient<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<IConfigurationSettingsService, ConfigurationSettingsService>();
-
+builder.Services.AddDbContext<MyDbContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString
+("DefaultConnection")));
 
 var key = WebApplication.CreateBuilder().Configuration["Settings:AccessTokenKey"];
 builder.Services.AddAuthentication(x =>
